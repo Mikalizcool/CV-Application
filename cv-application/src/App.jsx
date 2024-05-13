@@ -5,6 +5,8 @@ import './App.css'
 
 import General from './components/General'
 import Education from './components/Education'
+import Work from './components/Work'
+
 function App() {
   const [count, setCount] = useState(0)
 
@@ -12,6 +14,7 @@ function App() {
     <>
       <General />
       <Education />
+      <Work />
     </>
   )
 }
