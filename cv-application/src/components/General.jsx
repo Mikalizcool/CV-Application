@@ -7,7 +7,7 @@ function General () {
      
     return (
         <>
-            <div className = "w-50vw h-50vh border-solid bg-gray-500">
+            <div className = "w-50vw h-50vh border-solid bg-gray-500 border-4">
                 <form>
                     <label for="name">Name</label>
                     <input
