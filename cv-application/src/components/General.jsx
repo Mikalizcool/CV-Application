@@ -12,6 +12,7 @@ function General () {
                     <label for="name">Name</label>
                     <input
                     type="text"
+                    name="name"
                     id="name"
                     value={name}
                     onChange={(event) => setName(event.target.value)}>
@@ -19,16 +20,18 @@ function General () {
                     <label for="email">Email</label>
                     <input
                     type="email"
+                    name="email"
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}>
                     </input>
                     <label for="number">Number</label>
                     <input
                     type="text"
+                    name="number"
                     value={number}
                     onChange={(event)=>setNumber(event.target.value)}>
                     </input>
-                    <input type="submit" value="Submit"></input>
+                    <input type="submit" value="Submit"/>
                 </form>
             </div>
         </>

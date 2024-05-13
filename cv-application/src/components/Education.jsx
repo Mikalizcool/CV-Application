@@ -32,6 +32,7 @@ function Education () {
                 value={date}
                 onChange={(event)=>setDate(event.target.value)}>
                 </input>
+                <input type="submit" value="Submit" />
             </form>
         </>
     )
