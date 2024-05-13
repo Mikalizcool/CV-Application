@@ -4,12 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import General from './components/General'
+import Education from './components/Education'
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
       <General />
+      <Education />
     </>
   )
 }
