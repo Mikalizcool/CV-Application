@@ -1,8 +1,8 @@
 function Position () {
     return (
         <>
-            <div>
-                <h1>Bartender</h1>
+            <div className="text-center">
+                <h1 className="text-4xl font-bold">Bartender</h1>
                 <p>Welcome to the Black Lagoon Cafe!</p>
             </div>
         </>
