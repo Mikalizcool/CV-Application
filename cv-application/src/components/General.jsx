@@ -4,7 +4,7 @@ function General () {
     const [email, setEmail] = useState("");
     const [number, setNumber] = useState("");
     
-     
+    
     return (
         <>
             <div className = "flex flex-col w-3/5 pb-5 mb-10">

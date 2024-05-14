@@ -9,10 +9,28 @@ import General from './components/General'
 import Education from './components/Education'
 import Work from './components/Work'
 
+function makeInvisible (elementID) {
+  const element = document.getElementById(elementID);
+  if (element) {
+    console.log("hi");
+    element.style.display="none";
+  }
+  else {
+    console.log("no");
+  }
+}
+
+function makeVisible (elementID) {
+  const element = document.getElementById(elementID);
+  element.style.visibility="visible";
+}
+
 function App() {
   const handleSubmit = (e) => {
-    
+    e.preventDefault();
     console.log("Form submitted");
+    makeInvisible("form");
+    makeVisible("thanks");
   }
   return (
     <>
@@ -20,12 +38,13 @@ function App() {
           <Header />
           <div className="flex flex-col items-center w-4/5 pb-10 mb-10 border-l-4 border-r-4">
             <Position />
-            <form className="flex flex-col items-center w-3/5" onSubmit={handleSubmit}>
+            <form id="form" className="flex flex-col items-center w-3/5" onSubmit={handleSubmit}>
               <General />
               <Education />
               <Work />
               <input className="p-4 border-4 rounded" type="submit" value="Submit" />
             </form>
+            <p id="thanks" className="invisible">Thanks for applying!</p>
           </div>
         </div>
     </>
