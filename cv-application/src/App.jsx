@@ -14,13 +14,12 @@ function App() {
     
     console.log("Form submitted");
   }
-
   return (
     <>
         <Header />
         <div className="flex flex-col items-center">
           <Position />
-          <form onSubmit={handleSubmit}>
+          <form className="flex flex-col items-center border-4 border-solid" onSubmit={handleSubmit}>
             <General />
             <Education />
             <Work />

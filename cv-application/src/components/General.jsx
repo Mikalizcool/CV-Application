@@ -7,10 +7,11 @@ function General () {
      
     return (
         <>
-            <div className = "w-3/5 pb-5 mb-10 border-4 border-solid">
+            <div className = "flex flex-col w-3/5 pb-5 mb-10">
                 
                     <label htmlFor="name">Name</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="name"
                     id="name"

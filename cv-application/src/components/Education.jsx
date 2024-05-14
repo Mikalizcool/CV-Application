@@ -7,7 +7,7 @@ function Education () {
 
     return (
         <>
-            <div className = "w-3/5 pb-5 mb-10 border-4 border-solid">
+            <div className = "w-3/5 pb-5 mb-10">
                 
                     <label htmlFor="institution">Institution</label>
                     <input
