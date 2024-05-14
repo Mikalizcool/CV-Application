@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import Header from './components/Header'
+import Position from './components/Position'
 import General from './components/General'
 import Education from './components/Education'
 import Work from './components/Work'
@@ -15,6 +16,7 @@ function App() {
     <>
         <Header />
         <div className="flex flex-col items-center">
+          <Position />
           <General />
           <Education />
           <Work />
