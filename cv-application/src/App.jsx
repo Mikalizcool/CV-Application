@@ -13,10 +13,12 @@ function App() {
 
   return (
     <>
-      <Header />
-      <General />
-      <Education />
-      <Work />
+        <Header />
+        <div className="flex flex-col items-center">
+          <General />
+          <Education />
+          <Work />
+        </div>
     </>
   )
 }
