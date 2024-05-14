@@ -9,9 +9,9 @@ function Work () {
 
     return (
         <>
-            <div className = "w-3/5 border-solid border-4 mb-10 pb-5">
+            <div className = "w-3/5 pb-5 mb-10 border-4 border-solid">
                 <form>
-                    <label for="company">Company</label>
+                    <label htmlFor="company">Company</label>
                     <input
                     type="text"
                     name="company"
@@ -20,7 +20,7 @@ function Work () {
                     onChange={(event)=>setCompany(event.target.value)}
                     />
                     
-                    <label for="position">Position</label>
+                    <label htmlFor="position">Position</label>
                     <input
                     type="text"
                     name="position"
@@ -28,7 +28,7 @@ function Work () {
                     value={position}
                     onChange={(event)=>setPosition(event.target.value)}
                     />
-                    <label for="responsibilities">Responsibilities</label>
+                    <label htmlFor="responsibilities">Responsibilities</label>
                     <input
                     type="text"
                     name="responsibilities"
@@ -36,7 +36,7 @@ function Work () {
                     value={responsibilities}
                     onChange={(event)=>setResponsibilities(event.target.value)}
                     />
-                    <label for="startDate">Start Date</label>
+                    <label htmlFor="startDate">Start Date</label>
                     <input
                     type="text"
                     name="startDate"
@@ -44,7 +44,7 @@ function Work () {
                     value={startDate}
                     onChange={(event)=>setStartDate(event.target.value)}
                     />
-                    <label for="endDate">End Date</label>
+                    <label htmlFor="endDate">End Date</label>
                     <input
                     type="text"
                     name="endDate"

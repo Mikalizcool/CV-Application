@@ -7,9 +7,9 @@ function Education () {
 
     return (
         <>
-            <div className = "w-3/5 border-solid border-4 mb-10 pb-5">
+            <div className = "w-3/5 pb-5 mb-10 border-4 border-solid">
                 <form>
-                    <label for="institution">Institution</label>
+                    <label htmlFor="institution">Institution</label>
                     <input
                     type="text"
                     name="institution"
@@ -17,7 +17,7 @@ function Education () {
                     value={institution}
                     onChange={(event)=>setInstitution(event.target.value)}>
                     </input>
-                    <label for="major">Major</label>
+                    <label htmlFor="major">Major</label>
                     <input
                     type="text"
                     name="major"
@@ -25,7 +25,7 @@ function Education () {
                     value={major}
                     onChange={(event)=>setMajor(event.target.value)}>
                     </input>
-                    <label for="date">Date</label>
+                    <label htmlFor="date">Date</label>
                     <input
                     type="text"
                     name="date"

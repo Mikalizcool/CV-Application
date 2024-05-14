@@ -9,7 +9,7 @@ function General () {
         <>
             <div className = "w-3/5 pb-5 mb-10 border-4 border-solid">
                 <form>
-                    <label for="name">Name</label>
+                    <label htmlFor="name">Name</label>
                     <input
                     type="text"
                     name="name"
@@ -17,14 +17,14 @@ function General () {
                     value={name}
                     onChange={(event) => setName(event.target.value)}>
                     </input>
-                    <label for="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input
                     type="email"
                     name="email"
                     value={email}
                     onChange={(event) => setEmail(event.target.value)}>
                     </input>
-                    <label for="number">Number</label>
+                    <label htmlFor="number">Number</label>
                     <input
                     type="text"
                     name="number"
