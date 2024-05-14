@@ -10,14 +10,17 @@ import Education from './components/Education'
 import Work from './components/Work'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const handleSubmit = (e) => {
+    
+    console.log("Form submitted");
+  }
 
   return (
     <>
         <Header />
         <div className="flex flex-col items-center">
           <Position />
-          <form>
+          <form onSubmit={handleSubmit}>
             <General />
             <Education />
             <Work />

@@ -8,7 +8,7 @@ function General () {
     return (
         <>
             <div className = "w-3/5 pb-5 mb-10 border-4 border-solid">
-                <form>
+                
                     <label htmlFor="name">Name</label>
                     <input
                     type="text"
@@ -31,8 +31,8 @@ function General () {
                     value={number}
                     onChange={(event)=>setNumber(event.target.value)}>
                     </input>
-                    <input type="submit" value="Submit"/>
-                </form>
+                    
+                
             </div>
         </>
     )

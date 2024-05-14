@@ -10,7 +10,7 @@ function Work () {
     return (
         <>
             <div className = "w-3/5 pb-5 mb-10 border-4 border-solid">
-                <form>
+                
                     <label htmlFor="company">Company</label>
                     <input
                     type="text"
@@ -52,8 +52,7 @@ function Work () {
                     value={endDate}
                     onChange={(event)=>setEndDate(event.target.value)}
                     />
-                    <input type="submit" value="Submit"></input>
-                </form>
+                    
             </div>
         </>
     )

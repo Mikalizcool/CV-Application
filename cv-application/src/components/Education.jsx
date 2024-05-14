@@ -8,7 +8,7 @@ function Education () {
     return (
         <>
             <div className = "w-3/5 pb-5 mb-10 border-4 border-solid">
-                <form>
+                
                     <label htmlFor="institution">Institution</label>
                     <input
                     type="text"
@@ -33,8 +33,7 @@ function Education () {
                     value={date}
                     onChange={(event)=>setDate(event.target.value)}>
                     </input>
-                    <input type="submit" value="Submit" />
-                </form>
+                    
             </div>
         </>
     )
