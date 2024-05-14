@@ -9,10 +9,11 @@ function Work () {
 
     return (
         <>
-            <div className = "w-3/5 pb-5 mb-10">
+            <div className = "flex flex-col w-3/5 pb-5 mb-10">
                 
                     <label htmlFor="company">Company</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="company"
                     id="company"
@@ -22,6 +23,7 @@ function Work () {
                     
                     <label htmlFor="position">Position</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="position"
                     id="position"
@@ -30,6 +32,7 @@ function Work () {
                     />
                     <label htmlFor="responsibilities">Responsibilities</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="responsibilities"
                     id="responsibilities"
@@ -38,6 +41,7 @@ function Work () {
                     />
                     <label htmlFor="startDate">Start Date</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="startDate"
                     id="startDate"
@@ -46,6 +50,7 @@ function Work () {
                     />
                     <label htmlFor="endDate">End Date</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="endDate"
                     id="endDate"

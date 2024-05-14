@@ -16,15 +16,17 @@ function App() {
   }
   return (
     <>
-        <Header />
         <div className="flex flex-col items-center">
-          <Position />
-          <form className="flex flex-col items-center border-4 border-solid" onSubmit={handleSubmit}>
-            <General />
-            <Education />
-            <Work />
-            <input type="submit" value="Submit" />
-          </form>
+          <Header />
+          <div className="flex flex-col items-center w-4/5 pb-10 mb-10 border-l-4 border-r-4">
+            <Position />
+            <form className="flex flex-col items-center w-3/5" onSubmit={handleSubmit}>
+              <General />
+              <Education />
+              <Work />
+              <input className="p-4 border-4 rounded" type="submit" value="Submit" />
+            </form>
+          </div>
         </div>
     </>
   )

@@ -20,6 +20,7 @@ function General () {
                     </input>
                     <label htmlFor="email">Email</label>
                     <input
+                    className="border-4"
                     type="email"
                     name="email"
                     value={email}
@@ -27,6 +28,7 @@ function General () {
                     </input>
                     <label htmlFor="number">Number</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="number"
                     value={number}

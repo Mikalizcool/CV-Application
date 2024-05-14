@@ -7,10 +7,11 @@ function Education () {
 
     return (
         <>
-            <div className = "w-3/5 pb-5 mb-10">
+            <div className = "flex flex-col w-3/5 pb-5 mb-10">
                 
                     <label htmlFor="institution">Institution</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="institution"
                     id="institution"
@@ -19,6 +20,7 @@ function Education () {
                     </input>
                     <label htmlFor="major">Major</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="major"
                     id="major"
@@ -27,6 +29,7 @@ function Education () {
                     </input>
                     <label htmlFor="date">Date</label>
                     <input
+                    className="border-4"
                     type="text"
                     name="date"
                     id="date"
