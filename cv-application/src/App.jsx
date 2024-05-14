@@ -17,9 +17,12 @@ function App() {
         <Header />
         <div className="flex flex-col items-center">
           <Position />
-          <General />
-          <Education />
-          <Work />
+          <form>
+            <General />
+            <Education />
+            <Work />
+            <input type="submit" value="Submit" />
+          </form>
         </div>
     </>
   )
