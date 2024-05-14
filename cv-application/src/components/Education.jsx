@@ -7,33 +7,35 @@ function Education () {
 
     return (
         <>
-            <form>
-                <label for="institution">Institution</label>
-                <input
-                type="text"
-                name="institution"
-                id="institution"
-                value={institution}
-                onChange={(event)=>setInstitution(event.target.value)}>
-                </input>
-                <label for="major">Major</label>
-                <input
-                type="text"
-                name="major"
-                id="major"
-                value={major}
-                onChange={(event)=>setMajor(event.target.value)}>
-                </input>
-                <label for="date">Date</label>
-                <input
-                type="text"
-                name="date"
-                id="date"
-                value={date}
-                onChange={(event)=>setDate(event.target.value)}>
-                </input>
-                <input type="submit" value="Submit" />
-            </form>
+            <div className = "w-3/5 border-solid border-4 mb-10 pb-5">
+                <form>
+                    <label for="institution">Institution</label>
+                    <input
+                    type="text"
+                    name="institution"
+                    id="institution"
+                    value={institution}
+                    onChange={(event)=>setInstitution(event.target.value)}>
+                    </input>
+                    <label for="major">Major</label>
+                    <input
+                    type="text"
+                    name="major"
+                    id="major"
+                    value={major}
+                    onChange={(event)=>setMajor(event.target.value)}>
+                    </input>
+                    <label for="date">Date</label>
+                    <input
+                    type="text"
+                    name="date"
+                    id="date"
+                    value={date}
+                    onChange={(event)=>setDate(event.target.value)}>
+                    </input>
+                    <input type="submit" value="Submit" />
+                </form>
+            </div>
         </>
     )
 }
