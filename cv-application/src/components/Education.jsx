@@ -4,7 +4,7 @@ function Education () {
     const [institution, setInstitution] = useState("");
     const [major, setMajor] = useState("");
     const [date, setDate] = useState("");
-
+    
     return (
         <>
             <div className = "flex flex-col w-3/5 pb-5 mb-10">
