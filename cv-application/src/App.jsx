@@ -36,13 +36,14 @@ function App() {
     
     console.log("Form submitted");
     makeInvisible("form");
-    makeVisible("thanks");
     makeVisible("editButton");
+    makeVisible("message");
   }
 
   const edit = (e) => {
     makeVisible("form");
     makeInvisible("editButton");
+    makeInvisible("message");
   }
   return (
     <>
@@ -54,9 +55,10 @@ function App() {
               <General thanks={thanks} setThanks={setThanks}/>
               <Education />
               <Work />
-              <input className="p-4 border-4 rounded" type="submit" value="Submit" />
+              <input className="p-4 border-4 rounded cursor-pointer" type="submit" value="Submit" />
             </form>
-            <button id="editButton" className="hidden" type="button" onClick={edit}>Edit</button>
+            <p id="message" className="hidden mb-4">Application submitted.</p>
+            <button id="editButton" className="hidden p-3 border-4 rounded" type="button" onClick={edit}>Edit</button>
           </div>
         </div>
     </>
