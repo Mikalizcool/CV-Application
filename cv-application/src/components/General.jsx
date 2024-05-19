@@ -35,6 +35,7 @@ function General () {
                     onChange={(event)=>setNumber(event.target.value)}>
                     </input>
                     
+                    
                 
             </div>
         </>

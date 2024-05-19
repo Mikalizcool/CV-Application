@@ -22,15 +22,27 @@ function makeInvisible (elementID) {
 
 function makeVisible (elementID) {
   const element = document.getElementById(elementID);
-  element.style.visibility="visible";
+  if (element) {
+    element.style.display="flex";
+  }
 }
 
 function App() {
+  const [thanks, setThanks] = useState("Thanks for applying!");
+
+  
   const handleSubmit = (e) => {
     e.preventDefault();
+    
     console.log("Form submitted");
     makeInvisible("form");
     makeVisible("thanks");
+    makeVisible("editButton");
+  }
+
+  const edit = (e) => {
+    makeVisible("form");
+    makeInvisible("editButton");
   }
   return (
     <>
@@ -39,12 +51,12 @@ function App() {
           <div className="flex flex-col items-center w-4/5 pb-10 mb-10 border-l-4 border-r-4">
             <Position />
             <form id="form" className="flex flex-col items-center w-3/5" onSubmit={handleSubmit}>
-              <General />
+              <General thanks={thanks} setThanks={setThanks}/>
               <Education />
               <Work />
               <input className="p-4 border-4 rounded" type="submit" value="Submit" />
             </form>
-            <p id="thanks" className="invisible">Thanks for applying!</p>
+            <button id="editButton" className="hidden" type="button" onClick={edit}>Edit</button>
           </div>
         </div>
     </>
